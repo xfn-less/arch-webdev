@@ -1,0 +1,21 @@
+# Dependencies and build output from every example project.
+**/node_modules/
+**/dist/
+**/dist-*/
+**/coverage/
+**/.vite/
+
+# Machine-local state.
+**/*.log
+**/*.local
+**/.env
+**/.env.*
+!**/.env.example
+**/*.db
+**/*.db-*
+
+# Editor and operating-system files.
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/*.sw?

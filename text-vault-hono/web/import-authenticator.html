@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>导入 2FA · Text Vault</title>
+<link rel="stylesheet" href="styles.css">
+<body>
+<main class="auth-shell"><section class="auth-box">
+<h1>导入 2FA</h1>
+<p>保留一个已解锁的 Text Vault 标签页，选择 authenticator.txt。选中文件后立即加密导入，一账户一条，自动跳过已有密钥。</p>
+<input id="file" type="file" accept=".txt,text/plain" aria-label="选择 authenticator.txt" style="width:100%">
+<p id="status" role="status"></p>
+<a href="index.html#q=%232fa" target="_blank" rel="noopener">打开 Text Vault / 查看 2FA</a>
+</section></main>
+<script type="module" src="js/import-authenticator-page.js"></script>
+</body>
+</html>

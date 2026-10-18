@@ -1,0 +1,20 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {createRepository} from '../web/js/repository.js';
+import {createEntry} from '../web/js/model.js';
+import {runQuery} from '../web/js/core/query.js';
+const all = repo => runQuery({type:'full-text',text:'',orderBy:'createdAt',direction:'asc'},repo.values());
+test('deletion is committed and survives reload and remote synchronization', () => {
+  const entry = {...createEntry(),text:'delete me',revision:1};
+  const repo=createRepository([entry]);
+  repo.remove(entry.id);
+  assert.equal(all(repo).length,0);
+  const dirty=repo.captureDirty();
+  assert.equal(dirty.length,1);
+  assert.equal(dirty[0].baseRevision,1);
+  repo.markCommitted(dirty,{[entry.id]:2});
+  assert.equal(repo.hasPendingChanges(),false);
+  assert.equal(all(createRepository(repo.values())).length,0);
+  const other=createRepository([entry]);other.applyRemote(repo.values());
+  assert.equal(all(other).length,0);
+});

@@ -1,0 +1,6 @@
+/data/
+/.tmp/
+/text-vault
+/playwright-report/
+/test-results/
+/node_modules/

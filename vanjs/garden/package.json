@@ -1,0 +1,22 @@
+{
+  "name": "garden",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview --port 5173",
+    "preview": "vite build && vite preview --port 5173",
+    "serve": "vite serve dist/ --host --port 4173"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "idb-keyval": "^6.2.5",
+    "pell": "^1.0.6",
+    "vanjs-core": "^1.6.0"
+  }
+}

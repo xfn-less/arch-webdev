@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body { font-family: ui-monospace, Menlo, Consolas, monospace; background: #1e1e1e; color: #ddd; }
+button, input, textarea { border: 0; font: inherit; color: inherit; background: transparent; }
+button { cursor: pointer; }
+
+.river-shell { height: 100%; display: grid; grid-template-rows: auto 1fr auto; }
+.sync-status { min-height: 1.2em; padding: 2px 12px; font-size: 12px; color: #888; }
+.sync-status[data-state="editing"] { background: #2d4a35; color: #cfe8d4; }
+.sync-status[data-state="saving"] { background: #333; }
+.sync-status[data-state="failed"] { background: #5a2a2a; color: #f0c0c0; }
+
+.river { overflow: auto; padding: 16px; }
+.river-entry { display: grid; grid-template-columns: 8px 1fr; gap: 10px; margin-bottom: 14px; line-height: 1.5; }
+.entry-marker { background: #6a8f74; margin-top: .35em; height: .9em; }
+.entry-text { white-space: pre-wrap; overflow-wrap: anywhere; cursor: text; }
+.entry-editor { display: block; width: 100%; resize: none; overflow: hidden; padding: 4px; background: #2a2a2a; line-height: 1.5; }
+.entry-edit-error:not(:empty) { color: #e9a7a2; font-size: .85em; margin-top: 6px; }
+
+.search-control { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 10px 12px; border-top: 1px solid #333; background: #252525; }
+.search-input { width: 100%; padding: 8px 10px; background: #1e1e1e; border: 1px solid #444; }
+.add-entry { width: 40px; border: 1px solid #444; font-size: 20px; color: #aaa; }
+.search-error { grid-column: 1 / -1; color: #e9a7a2; font-size: 12px; }
+.search-error[hidden] { display: none; }
+.search-input:disabled, .add-entry:disabled { opacity: .45; }
+
+.auth-shell { min-height: 100%; display: grid; place-items: center; padding: 20px; }
+.auth-box { width: min(360px, 100%); padding: 20px; border: 1px solid #444; background: #252525; }
+.auth-box h1 { margin: 0 0 8px; font-size: 20px; }
+.auth-box p { margin: 0 0 16px; color: #999; line-height: 1.4; }
+.auth-box form { display: grid; gap: 12px; }
+.auth-box label { display: grid; gap: 4px; color: #999; font-size: 13px; }
+.auth-box input, .auth-box button { min-height: 40px; padding: 8px; border: 1px solid #444; background: #1e1e1e; }
+.auth-box button { background: #333; }
+.auth-box .auth-error { min-height: 18px; margin: 0; color: #e9a7a2; font-size: 13px; }

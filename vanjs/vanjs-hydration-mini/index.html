@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanJS add vs hydrate</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 32px;
+        color: #1f2937;
+      }
+
+      main {
+        max-width: 760px;
+      }
+
+      section {
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 16px 0;
+      }
+
+      button {
+        margin-right: 8px;
+      }
+
+      .counter {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .server {
+        background: #fff7ed;
+      }
+
+      .client {
+        background: #eff6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>VanJS add vs hydrate</h1>
+
+      <section>
+        <h2>1. Existing HTML before JavaScript</h2>
+        <p>This block is already in the HTML file. Think of it as SSR output.</p>
+
+        <div id="ssr-counter" class="counter server" data-count="5">
+          <button>-</button>
+          <strong>SSR static count: 5</strong>
+          <button>+</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. van.add target</h2>
+        <p>Client JavaScript will append a new counter below.</p>
+        <div id="client-only"></div>
+      </section>
+
+      <section>
+        <h2>3. Log</h2>
+        <pre id="log"></pre>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
