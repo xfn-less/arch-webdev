@@ -1,0 +1,26 @@
+# deps / build / runtime junk
+node_modules/
+**/dist/
+**/dist*/
+**/data/
+test-results/
+tmp-backups/
+**/bin/
+
+# local env & secrets
+.env
+.env.*
+!.env.example
+!**/*.env.example
+*.pem
+*.key
+
+# editor / OS / language junk
+.DS_Store
+*.swp
+*.swo
+*~
+__pycache__/
+*.py[cod]
+.zig-cache/
+zig-out/
