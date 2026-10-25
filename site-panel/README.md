@@ -1,4 +1,4 @@
-> **已退役（2026-10-24）**：公网 `site-panel.xfnss.top` 已切到 Caddy 版 `../site-panel-caddy`。本目录仅作 Nginx 旧版存档。
+> **已下线（2026-10-25）**：公网主控已拆除，本地 `data`/`bin`/`logs` 已清。代码仅存档；站点改回宝塔管理。
 
 # Site Panel
 
