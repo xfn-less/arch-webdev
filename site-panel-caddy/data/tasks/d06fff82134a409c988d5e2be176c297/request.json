@@ -1,0 +1,16 @@
+{
+  "operation": "disable",
+  "id": "d06fff82134a409c988d5e2be176c297",
+  "site": {
+    "id": "ad04b049937ae80159f276741ca03dcf",
+    "name": "新站点2285",
+    "domains": [
+      "180.97.221.31"
+    ],
+    "port": 80,
+    "mode": "static",
+    "cert": "off",
+    "redir_https": false
+  },
+  "bundle_sha256": ""
+}

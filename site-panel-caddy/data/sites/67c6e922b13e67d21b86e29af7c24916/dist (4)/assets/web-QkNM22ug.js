@@ -1,0 +1,1 @@
+var i=(t,s,n)=>new Promise((d,a)=>{var p=e=>{try{o(n.next(e))}catch(r){a(r)}},u=e=>{try{o(n.throw(e))}catch(r){a(r)}},o=e=>e.done?d(e.value):Promise.resolve(e.value).then(p,u);o((n=n.apply(t,s)).next())});import{aq as c}from"./index-C-690iio.js";class l extends c{show(s){return i(this,null,function*(){})}hide(s){return i(this,null,function*(){})}}export{l as SplashScreenWeb};

@@ -1,0 +1,16 @@
+{
+  "operation": "enable",
+  "id": "81c860020776a8317a0d7cd650c524ac",
+  "site": {
+    "id": "b5179b6b193513e58bcf039f283251ff",
+    "name": "站1",
+    "domains": [
+      "z1.nlpjbz.cn"
+    ],
+    "port": 80,
+    "mode": "static",
+    "cert": "auto",
+    "redir_https": true
+  },
+  "bundle_sha256": ""
+}

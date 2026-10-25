@@ -1,0 +1,15 @@
+[Unit]
+Description=Site Panel master
+After=network.target
+
+[Service]
+Type=simple
+User=site-panel
+Group=site-panel
+WorkingDirectory=/var/lib/site-panel
+ExecStart=/usr/local/bin/site-panel -listen 127.0.0.1:8090 -data /var/lib/site-panel/data -secure-cookie -ssh-key /var/lib/site-panel/id_ed25519 -node-binary /usr/local/libexec/site-panel-node
+Restart=on-failure
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

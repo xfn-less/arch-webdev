@@ -1,0 +1,14 @@
+{
+  "operation": "disable",
+  "id": "ae1a3ff45e968f5aa4f16eba44a5bb37",
+  "site": {
+    "id": "7f2e85a33b07949333ab35123d8cc778",
+    "name": "站1 副本",
+    "domains": [
+      "z1.nlpjbz.cn",
+      "103.239.186.54:10000"
+    ],
+    "port": 10000
+  },
+  "bundle_sha256": ""
+}

@@ -1,0 +1,16 @@
+{
+  "operation": "disable",
+  "id": "1a674425d7598bf541d80d2e3abcb547",
+  "site": {
+    "id": "822c11c6ac01bdd63e59de2601877c33",
+    "name": "新站点8603",
+    "domains": [
+      "180.97.221.31:10000"
+    ],
+    "port": 10000,
+    "mode": "static",
+    "cert": "off",
+    "redir_https": false
+  },
+  "bundle_sha256": ""
+}

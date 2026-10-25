@@ -1,0 +1,16 @@
+{
+  "operation": "disable",
+  "id": "aa127c3981fe9bdcfc24717a47b92e71",
+  "site": {
+    "id": "b5179b6b193513e58bcf039f283251ff",
+    "name": "站1",
+    "domains": [
+      "z1.nlpjbz.cn"
+    ],
+    "port": 80,
+    "mode": "static",
+    "cert": "auto",
+    "redir_https": true
+  },
+  "bundle_sha256": ""
+}

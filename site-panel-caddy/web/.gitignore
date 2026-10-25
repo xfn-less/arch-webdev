@@ -1,0 +1,9 @@
+/bin/
+/data/
+*.log
+/playwright-report/
+/test-results/
+/node_modules/
+__pycache__/
+*.py[cod]
+tmp-backups/

@@ -1,0 +1,11 @@
+{
+  "site_id": "b5179b6b193513e58bcf039f283251ff",
+  "at": "2026-10-23T06:54:40Z",
+  "files": {
+    "index.html": "51a8a47912b2cb5fd9f8c1c4be80f9af7f8fbfe11d555ac1209b82ac9ce268b6"
+  },
+  "nginx_hash": "9967c1954ad71d729a9e91245bf9be1468384cc02dbea80ce2b88be027825864",
+  "nginx_source": "custom",
+  "vars_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "replacements": 0
+}
