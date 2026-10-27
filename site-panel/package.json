@@ -1,7 +1,0 @@
-{
-  "name": "site-panel-browser-tests",
-  "private": true,
-  "type": "module",
-  "scripts": { "test:unit": "node --test tests/unit/*.test.mjs", "test:browser": "playwright test" },
-  "devDependencies": { "@playwright/test": "1.61.1" }
-}
